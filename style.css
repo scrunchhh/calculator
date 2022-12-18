@@ -1,0 +1,54 @@
+* {
+    color: #ddddcd;
+}
+
+body {
+    display: flex;
+    background-color: #ddddcd;
+    border: 2px red solid;
+    height: 97vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 800px;
+    border: 2px solid red;
+}
+
+.container div {
+    border: 2px solid red;
+}
+
+.output {
+    margin: 20px;
+    min-height: 100px;
+}
+
+.topOperators {
+    margin: 20px;
+    min-height: 100px;
+}
+
+.bottomBox {
+    margin: 20px;
+    display: flex;
+    height: 450px;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.digits {
+    min-height: 400px;
+    min-width: 448px;
+}
+
+.rightOperators {
+    min-width: 100px;
+    min-height: 400px;
+}
+
