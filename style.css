@@ -1,5 +1,5 @@
 * {
-    color: #ddddcd;
+    /* color: #ddddcd; */
 }
 
 body {
@@ -15,40 +15,46 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 800px;
+    width: 60vw;
+    max-width: 500px;
+    height: 80vh;
+    max-height: 800px;
     border: 2px solid red;
 }
 
 .container div {
     border: 2px solid red;
+    margin: 5px;
 }
 
 .output {
-    margin: 20px;
-    min-height: 100px;
+    flex: 1;
 }
 
-.topOperators {
-    margin: 20px;
-    min-height: 100px;
-}
-
-.bottomBox {
-    margin: 20px;
+.operators {
     display: flex;
-    height: 450px;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 0px;
+    flex: 1;
 }
 
 .digits {
-    min-height: 400px;
-    min-width: 448px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 5;
 }
 
-.rightOperators {
-    min-width: 100px;
-    min-height: 400px;
+.digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
 }
 
+.operator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
