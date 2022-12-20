@@ -35,7 +35,7 @@ function onClick(e) {
             if (calcSplit.includes('/')) {
                 for (let i = 0; i <= calcSplit.length; i++) {
                     if (calcSplit[i] == '/') {
-                        calcSplit[i] = +calcSplit[i - 1] / +calScSplit[i + 1]
+                        calcSplit[i] = +calcSplit[i - 1] / +calcSplit[i + 1]
                         calcSplit.splice(i - 1, 1)
                         calcSplit.splice(i, 1)
                     }
