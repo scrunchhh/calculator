@@ -16,8 +16,8 @@ function onClick(e) {
     //on equals click, run the calculator on the string input
     if (e.target.textContent == ' =') {
         
-        container.classList.add('rotated')// SPINS ON EQUALS SIGN
-        
+        //container.classList.add('rotated')// SPINS ON EQUALS SIGN
+
         calcSplit = calcList.split(' ')
         //run code until one final number remains
         while (calcSplit.length != 1) {
