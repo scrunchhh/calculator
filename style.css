@@ -28,6 +28,25 @@ body {
     box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, -50px 50px 50px 5px rgba(0,0,0,0);
 }
 
+@media (max-width: 500px) { 
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        gap: 15px;
+        max-width: 500px;
+        height: 45vh;
+        max-height: 800px;
+        background-color: #e1eeff;
+        border: 8px solid #e1eeff;
+        transition: transform 1s ease;
+        border-radius: 35px;
+        -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, -50px 50px 50px 5px rgba(0,0,0,0); 
+        box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, -50px 50px 50px 5px rgba(0,0,0,0);
+
+    }
+}
+
 .rotated {
     transform: rotate(-180deg);
 }
