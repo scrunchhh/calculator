@@ -1,3 +1,4 @@
+const container = document.querySelector('.container')
 const operatorBox = document.querySelector('.operators')
 const digitsBox = document.querySelector('.digits')
 const outputBox = document.querySelector('.output')
@@ -6,7 +7,7 @@ function onClick(e) {
     //clear string on click after getting result unless its an operator
     if (typeof(calcList) == 'number' 
     && e.target.textContent != ' / ' 
-    && e.target.textContent != ' * ' 
+    && e.target.textContent != ' x ' 
     && e.target.textContent != ' + ' 
     && e.target.textContent != ' ^ ' 
     && e.target.textContent != ' - ') {
@@ -14,6 +15,9 @@ function onClick(e) {
     }
     //on equals click, run the calculator on the string input
     if (e.target.textContent == ' =') {
+        
+        container.classList.add('rotated')// SPINS ON EQUALS SIGN
+        
         calcSplit = calcList.split(' ')
         //run code until one final number remains
         while (calcSplit.length != 1) {
@@ -31,15 +35,15 @@ function onClick(e) {
             if (calcSplit.includes('/')) {
                 for (let i = 0; i <= calcSplit.length; i++) {
                     if (calcSplit[i] == '/') {
-                        calcSplit[i] = +calcSplit[i - 1] / +calcSplit[i + 1]
+                        calcSplit[i] = +calcSplit[i - 1] / +calScSplit[i + 1]
                         calcSplit.splice(i - 1, 1)
                         calcSplit.splice(i, 1)
                     }
                 }
             }
-            if (calcSplit.includes('*')) {
+            if (calcSplit.includes('x')) {
                 for (let i = 0; i <= calcSplit.length; i++) {
-                    if (calcSplit[i] == '*') {
+                    if (calcSplit[i] == 'x') {
                         calcSplit[i] = +calcSplit[i - 1] * +calcSplit[i + 1]
                         calcSplit.splice(i - 1, 1)
                         calcSplit.splice(i, 1)
@@ -96,7 +100,7 @@ for (let i = 0; i <= 15; i++) {
 
 //add operators to operatorBox
 for (let i = 0; i <= 3; i++) {
-    let arr = [' + ', ' - ', ' * ', ' / ']
+    let arr = [' + ', ' - ', ' x ', ' / ']
     let operator = document.createElement('button')
     operator .classList.add('operator')
     operator.textContent = arr[i]
