@@ -20,11 +20,9 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    width: 60vw;
     gap: 15px;
-    max-width: 500px;
-    height: 80vh;
-    max-height: 800px;
+    width: 375px;
+    height: 600px;
     background-color: #e1eeff;
     border: 8px solid #e1eeff;
     transition: transform 1s ease;
